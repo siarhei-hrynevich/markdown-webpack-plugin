@@ -39,7 +39,7 @@ const processMarkdownFile = async (
   destination: string,
 ): Promise<void> => {
   const markdown = await readFileContent(path.join(source, file));
-  const html = template.replace('{{markdownContent}}', compileMarkdown(markdown));
+  const html = template.replace('{{markdownContent}}', compileMarkdown(markdown, source));
   const fileInfo = path.parse(file);
   const fileName = `${fileInfo.dir}/${fileInfo.name}.html`
   await writeFile(path.join(destination, fileName), html);
