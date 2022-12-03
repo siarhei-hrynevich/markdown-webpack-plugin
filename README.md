@@ -26,3 +26,6 @@ Example of HTML template. `{{markdownContent}}` will be replaced to generated HT
 </body>
 </html>
 ```
+## Example
+
+[Plugin usage](https://github.com/siarhei-hrynevich/markdown-webpack-plugin/tree/master/example)
