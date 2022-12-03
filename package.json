@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Webpack plugin for building markdown in HTML static site",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "npm run clean && tsc",
     "clean": "rm -rf dist",
