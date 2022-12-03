@@ -29,3 +29,17 @@ Example of HTML template. `{{markdownContent}}` will be replaced to generated HT
 ## Example
 
 [Plugin usage](https://github.com/siarhei-hrynevich/markdown-webpack-plugin/tree/master/example)
+
+## Link resolver:
+
+Plugin can recognize links on another markdown files:
+
+```md
+[Linked page](./linked-page.md)
+```
+
+Will be compiled to:
+
+```html
+<a href="./linked-page.html">Linked page</a>
+```
