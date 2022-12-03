@@ -1,6 +1,7 @@
 import { marked } from 'marked';
 import path from 'path'
 import fs from 'fs';
+import sanitizeHtml from 'sanitize-html';
 
 type IterationCallback = (token: marked.Token) => void;
 
@@ -46,5 +47,5 @@ export const compileMarkdown = (markdown: string, source: string) => {
 
   resolveLinks(tokens, source);
 
-  return parser.parse(tokens);
+  return sanitizeHtml(parser.parse(tokens));
 };
