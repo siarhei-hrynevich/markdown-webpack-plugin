@@ -2,7 +2,8 @@
   "name": "markdown-plugin-example",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --mode development"
+    "build": "webpack --mode development",
+    "start:reload": "webpack serve --mode development"
   },
   "devDependencies": {
     "webpack": "^5.75.0"
